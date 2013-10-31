@@ -10,6 +10,7 @@ oh = open(of,'w')
 
 try:
     readcount = 0
+    length = 220
     carat = re.compile('>')
     A = {}
     T = {}
@@ -46,7 +47,7 @@ try:
                     G[count] = tmp
                 
 finally:
-    for it in range(1,208):
+    for it in range(1,length):
         ATtmp = ((A[it] + T[it]) * 1.0) / readcount
         GCtmp = ((C[it] + G[it]) * 1.0) / readcount
         tmpit = str(it)
