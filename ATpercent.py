@@ -10,7 +10,7 @@ oh = open(of,'w')
 
 try:
     readcount = 0
-    length = 220
+    length = length
     carat = re.compile('>')
     A = {}
     T = {}
