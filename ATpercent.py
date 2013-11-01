@@ -10,13 +10,13 @@ oh = open(of,'w')
 
 try:
     readcount = 0
-    length = length
+    length = 220
     carat = re.compile('>')
     A = {}
     T = {}
     C = {}
     G = {}
-    for it in range(1,220):
+    for it in range(1,length):
         A[it] = 0
         C[it] = 0
         G[it] = 0
